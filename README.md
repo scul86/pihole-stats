@@ -14,7 +14,10 @@ This will create the log file and path, as well as installing and activating the
 `pip3 install -r requirements.txt`  
 Installs the python requirements
 
-Download the font [from here](https://www.dafont.com/monofonto.font) and place in the `fonts` folder
+Download monofonto.ttf [from here](https://www.dafont.com/monofonto.font) and place in the `fonts` folder
+
+Install DejaVuMono font:  
+`sudo apt install fonts-dejavu`
 
 ## Enable SPI
 `sudo raspi-config`  > `3 Interface Options` > `4P SPI`
