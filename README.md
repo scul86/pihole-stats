@@ -3,7 +3,7 @@
 
 ## Install requirements
 `sudo apt install git`  
-`git pull https://github.com/scul/pihole-stats.git`  
+`git clone https://github.com/scul/pihole-stats.git`  
 `cd pihole-stats`  
 `chmod u+x install.sh`  
 `./install.sh`  
