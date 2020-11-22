@@ -1,5 +1,6 @@
 # Using the pihole-stats display
-[e-Ink display I used](https://www.waveshare.com/product/displays/e-paper/epaper-3/1.54inch-e-paper-module-b.htm)
+[e-Ink display I used](https://www.waveshare.com/product/displays/e-paper/epaper-3/1.54inch-e-paper-module-b.htm)  
+![pihole-stats display](pics/pihole-stats.jpg)
 
 ## Install requirements
 `sudo apt install git`  
