@@ -35,7 +35,7 @@ try:
     epd = epd1in54b_V2.EPD()
     logging.info("init and Clear")
     epd.init()
-    epd.Clear()
+    # epd.Clear()  # not needed?
     HEIGHT = epd.height
     WIDTH = epd.width
     # HEIGHT = 200
@@ -128,8 +128,8 @@ try:
     x = graph_width + int((WIDTH - graph_width) / 2)
     y = graph_rect[1] + 5
     trimmed_times = list(reversed(list(ads_over_time)))[-graph_size:]
-    _max_d = max(domains_over_time[t] for t in trimmed_times)
-    logging.debug(f'{_max_d}')
+    max_d = max(domains_over_time[t] for t in trimmed_times)
+    logging.debug(f'{max_d}')
     for k in trimmed_times:
         x -= graph_spacing
         ads = ads_over_time[k]
@@ -141,8 +141,8 @@ try:
 
         x1 = x + 2
         x2 = x + graph_spacing - 2
-        adj_start = graph_height * (1 - domains_over_time[k] / _max_d)
-        adj_end = graph_height - (graph_height * pct) * (domains_over_time[k] / _max_d)
+        adj_start = graph_height * (1 - domains_over_time[k] / max_d)
+        adj_end = graph_height - (graph_height * pct) * (domains_over_time[k] / max_d)
 
         logging.debug(f'{domains}, {ads}, {pct}, {adj_end}')
 
