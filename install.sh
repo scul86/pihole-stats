@@ -13,3 +13,6 @@ cp pihole-stats.logrotate /etc/logrotate.d/
 systemctl daemon-reload
 systemctl start pihole-stats.timer
 systemctl enable pihole-stats.timer
+
+mkdir fonts
+chown pi:pi fonts

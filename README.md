@@ -3,6 +3,7 @@
 
 ## Install requirements
 `sudo apt install git`  
+`cd ~` the below scripts all assume this is installed to `/home/pi/pihole-stats/`  
 `git clone https://github.com/scul86/pihole-stats.git`  
 `cd pihole-stats`  
 `chmod u+x install.sh`  
@@ -11,6 +12,8 @@ This will create the log file and path, as well as installing and activating the
 
 `pip3 install -r requirements.txt`  
 Installs the python requirements
+
+Download the font [from here](https://www.dafont.com/monofonto.font) and place in the `fonts` folder
 
 ## Enable SPI
 `sudo raspi-config`  > `3 Interface Options` > `4P SPI`
