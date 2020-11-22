@@ -1,0 +1,6 @@
+/var/log/pihole-stats/pihole-stats.log {
+   rotate 12
+   size 10k
+   compress
+   missingok
+}

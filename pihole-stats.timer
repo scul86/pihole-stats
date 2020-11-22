@@ -1,0 +1,9 @@
+[Unit]
+Description=Run pihole-stats every 30 min
+
+[Timer]
+OnBootSec=15sec
+OnUnitActiveSec=30min
+
+[Install]
+WantedBy=timers.target

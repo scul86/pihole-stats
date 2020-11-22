@@ -1,0 +1,10 @@
+[Unit]
+Description=Display PiHole stats on e-Ink screen
+After=syslog.target network.target auditd.service
+
+[Service]
+User=pi
+ExecStart=/home/pi/pihole-stats/epaper_small.py
+
+[Install]
+WantedBy=multi-user.target
